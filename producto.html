@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>  
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top  ">
+            <ul class="navbar-top-ul">
+               
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="carrito.html" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">CompuNet</a>
+                <a class="navbar-mobile-link has-text-white" href="carrito.html"><i class="zmdi zmdi-shopping-cart"></i> </a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">CompuNet
+                </a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Productos <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <!-- <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a> -->
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=mouse">Mouse</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=parlante">Parlante</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=monitor">Monitor</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cpu">CPU</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cables">Cables</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=microfono">Microfono</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=teclado">Teclado</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=gadget">Gadgets</a></li>
+                                    </ul>
+                                </li>
+                            </ul>  
+                           
+                            <!-- <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                
+                            </div> -->
+                        </div>
+                    </li>
+                  
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link">Sobre Nosotros</a></li>
+
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>La marca</h1>
+            <h2>Slogan de la compañia</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-two-fifths-desktop">
+                <div class="slider" id="slider">
+                                    
+                    <div class="slider-button-left slider-buttons" onclick="previus()">
+                        <i class="zmdi zmdi-chevron-left zmdi-hc-3x"></i>
+                    </div>
+                    <div class="slider-button-right slider-buttons" onclick="next()">
+                        <i class="zmdi zmdi-chevron-right zmdi-hc-3x"></i>
+                    </div>                    
+                    
+                </div>
+            </div>
+            <div class="column">
+                <h3 class="is-size-4" id='nombre'></h3>
+                <p class=""> Compartir: 
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                    <a class="icon-socials" href="#"><i class="zmdi zmdi-whatsapp"></i></a>
+                </p>
+                <h2 class="price is-size-4" id="precio"><sup>Bs</sup> </h2>
+                <p class="has-text-grey" id="stock">    </p>
+                <p class="text-default">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                    repellat,
+                    sequi doloremque accusamus, voluptates nihil commodi necessitatibus, ullam
+                    fugit ea a illo maxime repudiandae. Iusto totam nemo nam ullam officiis?</p>
+                <form action="javascript:;" class="form-control">
+                    <div class="columns is-multiline">
+                       <!--  <div class="column is-one-third">
+                            <label for="color">Color</label>
+                            <select class="form-control-field" id="color">
+                                <option value="#">Color 1</option>
+                                <option value="#">Color 2</option>
+                                <option value="#">Color 3</option>
+                            </select>
+
+                        </div> -->
+                        <!-- <div class="column is-one-third">
+
+                            <label for="size">Tamaño</label>
+                            <select class="form-control-field" id="size">
+                                <option value="#">Tamaño 1</option>
+                                <option value="#">Tamaño 2</option>
+                                <option value="#">Tamaño 3</option>
+                            </select>
+                        </div> -->
+                        <div class="column is-one-third">
+                            <label for="quality">Cantidad</label>
+                            <input class="form-control-field" type="number" id="cantidad" value="1" min="1">
+                        </div>
+                        <div class="column is-full is-marginless">
+                            <button class="btn btn-default btn-outline" onclick="agregarAlCarrito()" id="btnAgregar"><i class="zmdi zmdi-shopping-cart"></i>
+                                Agregar al carrito</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns is-tablet">
+            <div class="column">
+                <div class="tabs-container">
+                    <ul class="tabs" id="tabs">
+                        <li class="tabs-item active-tab">Descripción</li>
+                        <li class="tabs-item">Video</li>
+                        
+                    </ul>
+                    <div class="tabs-panels">
+                        <div class="tab-panel active-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column">
+                                        <h2 class="is-size-4">Descripción</h2>
+                                        <p id="descripcion"></p>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-panel">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column is-half">
+
+                                        <div class="video-container">
+                                            
+                                            <iframe src="https://www.youtube.com/embed/MDgZLV6gqV0" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="colulmn is-half">
+
+                                        <h2 class="is-size-4">Video</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+                                            natus.
+                                            Doloribus
+                                            neque
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                        
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">SObre nosotros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>                        
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>                        
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver productos</a></li>                        
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Productos</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>   
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Contactanos</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Numero Telefono</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">WhatsApp</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Facebook </a></li>
+                        
+                    </ul>
+                </div>               
+                              
+            </div>
+        </div>
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">2021 Avenue Fashion</a>
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/mensajesanimados.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/peticionesfetch.js"></script>
+    
+    <script>
+        var nombre=document.querySelector('#nombre');
+        var precio=document.querySelector('#precio');
+        var stock=document.querySelector('#stock');
+        var cantidad=document.querySelector('#cantidad');
+        var descripcion=document.querySelector('#descripcion');
+        var imagenes=document.querySelector('#slider');
+        var objeto;
+        var carrito = new Carrito();
+        var cantidadItems=2;
+            
+        window.onload=function(){
+            carrito.constructor();
+            var URLactual = window.location.search;
+            if(URLactual.length>1){
+                let recorteURL=URLactual.split('=');
+                obtenerProductoxId(Number(recorteURL[1]));                
+            }
+        }
+
+
+        function obtenerProductoxId(idProducto){
+            let dato={};
+            
+            conectarConServidor({ id:idProducto , tipoP:'obtenerProductoxId' })
+            .then((response) =>{
+                
+                imagen =response.urlfotos.split(',');
+                nombre.innerText=response.nombre;
+                precio.innerText+= ' '+ response.precio;
+                objeto =  {id:idProducto ,nombre:response.nombre ,precio:response.precio,cantidad:0,img: imagen[0] };
+                if(response.stock>0){
+                    stock.innerHTML = "<strong>Disponibilidad:</strong> En stock";
+                }else{
+                    stock.innerHTML = "<strong>Disponibilidad:</strong> Agotado";
+                
+                }
+                descripcion.innerText=response.descripcion;  
+                
+                for (let index = 0; index < imagen.length; index++) {
+                    
+                    imagenes.innerHTML+=""+
+                        "<div class='slider-img-container'>"+
+                        "<img src='"+imagen[index]+"' alt='' class=' "+(index==0?'active':'' )+" slider-item'>"+
+                    +"</div>";                     
+                } 
+                                            
+                
+            })            
+            .catch((e)=>{
+                console.log(e)                
+            })
+        }
+
+
+        function previus(){
+            imagenes.children[cantidadItems].childNodes[0].classList.remove('active');
+            if(cantidadItems > 2){
+                cantidadItems-=1;
+            }else{
+                cantidadItems=imagenes.children.length-1;
+            }
+            imagenes.children[cantidadItems].childNodes[0].classList.add('active');
+        }
+
+
+        function next(){
+        
+            imagenes.children[cantidadItems].childNodes[0].classList.remove('active');
+            if(cantidadItems < imagenes.children.length-1){
+                
+                cantidadItems+=1;
+            }else{
+                
+                cantidadItems=2;
+            }
+
+            imagenes.children[cantidadItems].childNodes[0].classList.add('active');
+
+        }
+
+
+        function agregarAlCarrito(){
+            objeto.cantidad=Number( cantidad.value);
+            console.log(objeto)
+            carrito.agregarItem(objeto);
+            mensajeAlerta('Producto listo en el carrito ','success');
+        }    
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

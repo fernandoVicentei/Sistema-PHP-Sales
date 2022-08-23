@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">               
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="carrito.html" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">CompuNet</a>
+                <a class="navbar-mobile-link has-text-white" href="carrito.html"><i class="zmdi zmdi-shopping-cart"></i></a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">CompuNet</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Productos <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <!-- <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a> -->
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=mouse">Mouse</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=parlante">Parlante</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=monitor">Monitor</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cpu">CPU</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cables">Cables</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=microfono">Microfono</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=teclado">Teclado</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=gadget">Gadgets</a></li>
+                                    </ul>
+                                </li>
+                            </ul>  
+                         
+                        </div>
+                    </li>                 
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link"> Sobre Nosotros </a></li>
+             
+                    <li class="nav-menu-item"><a href="login.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <!-- Banner -->
+    <div class="banner banner-second">
+        <div class="banner-container ">
+            <h1>La marca</h1>
+            <h2>Slogan de la compañia</h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="nav">
+            <a class="nav-item   items" href="javascript:;" id="mouse" onclick="obtener(this,1)">Mouse</a>
+            <a class="nav-item items" href="javascript:;" id="parlante" onclick="obtener(this,2)">Parlante</a>
+            <a class="nav-item items" href="javascript:;" id="monitor" onclick="obtener(this,3)">Monitor</a>
+            <a class="nav-item items" href="javascript:;" id="cpu" onclick="obtener(this,4)">CPU</a>
+            <a class="nav-item items" href="javascript:;" id="cables" onclick="obtener(this,5)">Cable</a>
+            <a class="nav-item items" href="javascript:;" id="microfono" onclick="obtener(this,6)">Microfono</a>
+            <a class="nav-item items" href="javascript:;" id="teclado" onclick="obtener(this,7)">Teclado</a>
+            <a class="nav-item items" href="javascript:;" id="gadget" onclick="obtener(this,8)">Gadgets</a>
+        </nav>
+    </div>
+    
+    <div class="container" id="item2">
+        <div class="columns is-mobile is-multiline contenido">
+
+            <!-- <div class="column is-half-mobile is-one-quarter-desktop">
+                <div class="card ">
+                    <span class="price"> <sup>REF</sup> M1</span>
+                    <figure class="image is-square">
+                        <img src="img/mouse1.jpg" alt="">
+                    </figure>                    
+                    <div class="card-simple-options">
+                        <a href="" class="btn btn--mini-rounded">
+                            <i class="zmdi zmdi-favorite"></i>
+                        </a>
+                        <a href="" class="btn btn--mini-rounded">
+                            <i class="zmdi zmdi-info"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+             
+            
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                        
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">SObre nosotros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>                        
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>                        
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver productos</a></li>                        
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Productos</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>   
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Contactanos</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Numero Telefono</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">WhatsApp</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Facebook </a></li>
+                        
+                    </ul>
+                </div>               
+                              
+            </div>
+        </div>
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">2021 Avenue Fashion</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/peticionesfetch.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/mensajesanimados.js"></script>
+    <script src="js/main.js"></script>
+    <script >
+            var carrito = new Carrito();
+            carrito.constructor();
+            var contenido=document.querySelector(".contenido");
+
+            function agregarI(item,item1,item2,e){
+                //event.preventDefault();
+                var data=e.getAttribute('data').split(',');
+                var dato={id:item,nombre:data[0],precio:item1,cantidad:item2,img:data[1]};                
+                carrito.agregarItem(dato);
+                mensajeAlerta('Añadido al carrito correctamente !','success')
+            }
+            
+            function cargarArchivos(url){
+                var URLactual =url;
+                if(URLactual.length>1){
+                    let d=URLactual.split('=');
+                    let id= (d[1]=='parlante'?2:(d[1]=='monitor'?3:(d[1]=='cpu'?4:(d[1]=='cables'?5:(d[1]=='microfono'?6:(d[1]=='teclado'?7:(d[1]=='mouse'?1:8)))))));
+                    cargarProducto(id);
+                    document.querySelector('#'+d[1]).classList.add('--active');
+                }else{
+                    cargarProducto(1);
+                    document.querySelector('.nav .items').classList.add('--active');
+                }
+            }
+
+            function cargarProducto(id){
+                fetchData(id,'').then((result) => {                    
+                    contenido.innerHTML=result;
+                }).catch((err) => {
+                    console.log(err);
+                });               
+            }
+
+            const obtener=(e,i)=>{
+                data.forEach(e=>{
+                    e.classList.remove('--active')
+                })
+                e.classList.add('--active');
+                cargarProducto(i);
+            }
+
+            window.onload=function(){
+                var URLactual = window.location.search;
+                cargarArchivos(URLactual)
+            }
+
+            
+    </script>
+</body>
+
+</html>

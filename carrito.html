@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+
+
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Carrito </title>  
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">               
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links active">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">CompuNet</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> </a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">CompuNet</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu" href="#">Productos <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <!-- <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a> -->
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=mouse">Mouse</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=parlante">Parlante</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=monitor">Monitor</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cpu">CPU</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cables">Cables</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=microfono">Microfono</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=teclado">Teclado</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=gadget">Gadgets</a></li>
+                                    </ul>
+                                </li>
+                            </ul>  
+                           
+                            <!-- <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>
+                                
+                            </div> -->
+                            
+                             
+                        </div>
+                    </li>
+                   
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link">La Marca</a></li>
+                 
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+   
+    <div class="container-full">
+        <div class="is-two-fifths-desktop paddings">
+            <h1 class="has-text-centered-fullhd has-text-centered-mobile has-text-centered-desktop has-text-centered-desktop-only has-text-centered textoCenter">My Cart</h1> 
+            <div class="table-container column-full">
+
+                <table class="table is-fullwidth" id="CarritoTabla">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th ><abbr >Nombre </abbr></th>
+                        <th ><abbr >Precio</abbr></th>
+                        <th ><abbr >Cantidad</abbr></th>
+                        <th ><abbr >SubTotal</abbr></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody id="lista">
+
+                      <!-- <tr>
+                        <td>
+                            <figure class="image is-128x128">
+                                <img src="img/item-1.png" width="128" height="128">
+                            </figure>
+                        </td>
+                        <td>Nomnbre Producto
+                        </td>
+                        <td>38</td>
+                        <td>
+                            <input type="number" min="1" value="1" style="text-align: center;padding: 5px;" >
+                        </td>
+                        <td> 2000 Bs. </td>
+                        <td>
+                            <button class="button is-danger is-outlined">
+                                <span class="icon is-medium">
+                                    <i class="zmdi zmdi-delete"></i>
+                                </span>
+                            </button>
+                        </td>                        
+                      </tr> -->
+                                         
+                    </tbody>
+                </table>                
+            </div>
+            <div class="container-full">
+                <a class="button is-info is-outlined" href="sale.html" ><i class="zmdi zmdi-flash paddingRight"></i>
+                    Finalizar</a>
+                <button class="button is-dark is-outlined" onclick="actualizar()" ><i class="zmdi zmdi-refresh paddingRight"></i>
+                    Actualizar</button>
+                <button class="button is-danger is-outlined" onclick="eliminarcarrito()"><i class="zmdi zmdi-delete paddingRight"></i>
+                    Vaciar Carrito</button>
+            </div>   
+        </div>
+    </div>    
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Local stores</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Porqué comprar</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios y retornos</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios seguros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Testimonios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Award waining</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Etival trading</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Registro</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver catálogo</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Track an order</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Catalogo</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Datos de contacto</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Head</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">2021 Avenue Fashion</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var carrito = new Carrito();
+        carrito.constructor();
+
+        var lista=document.getElementById("lista");
+        var tabla=document.getElementById("CarritoTabla");
+
+        window.onload=function(){
+            cargarCarrito()
+        };
+
+        function cargarCarrito(){
+            lista.innerHTML='';
+            var carro=carrito.getCarrito;
+            var contenido='';
+            for(var item of carro){
+                var fila = document.createElement("tr");
+                contenido="<td><figure class='image is-128x128'><img src='"+item.img+"' width='128' height='128'></figure></td>";
+                contenido+= "<td>"+item.nombre+"</td><td>"+item.precio+"</td>";
+                contenido+=" <td><input type='number' min='1' value='"+item.cantidad+"' style='text-align: center;padding: 5px;' ></td>";
+                contenido+="<td> "+(item.cantidad*item.precio)+" Bs. </td>";
+                contenido+=" <td><button class='button is-danger is-outlined' id="+item.id+"><span class='icon is-medium' onClick='eliminarItem("+item.id+")'><i class='zmdi zmdi-delete'></i></span></button></td> ";
+                fila.innerHTML=contenido;
+                lista.appendChild(fila)
+            }
+        }
+        function eliminarItem(id){           
+            carrito.eliminarItem(id);
+            cargarCarrito();
+            mensajeAlerta('Producto eliminado correctamente !')
+        }
+        function actualizar(){
+            var objeto={};
+            for (var i = 1, row; row = tabla.rows[i]; i++) {           
+                let cantidad=tabla.rows[i].cells[3].children[0].value
+                let imag=tabla.rows[i].cells[0].children[0].children[0].getAttribute('src')
+                let nombre=tabla.rows[i].cells[1].innerText
+                let precio= tabla.rows[i].cells[2].innerText
+                let id=tabla.rows[i].cells[5].children[0].getAttribute('id')
+                objeto={id:id,nombre:nombre,precio:precio,cantidad:cantidad,img:''+imag+''};
+                carrito.actualizarItem(objeto);
+            }
+            cargarCarrito();
+            mensajeAlerta('Carrito actualizado !');
+        }
+
+        function mensajeAlerta(mensaje){
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+                })
+
+                Toast.fire({
+                icon: 'success',
+                title: ''+mensaje
+                })
+        }
+
+        function eliminarcarrito(){
+            carrito.vaciarCarrito();
+            cargarCarrito();
+            mensajeAlerta('Carrito eliminado y actualizado correctamente !');
+        }
+
+
+    </script>
+</body>
+</html>

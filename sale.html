@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title> Carrito </title>  
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">               
+                <li class="navbar-top-item">
+                    <a href="login.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="zmdi zmdi-menu"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="index.html">CompuNet</a>
+                <a class="navbar-mobile-link has-text-white" href="#"><i class="zmdi zmdi-shopping-cart"></i> </a>
+            </header>
+            <nav class="nav-menu --nav-dark-light" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon"><i class="zmdi zmdi-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+                <a class="is-hidden-mobile brand is-uppercase has-text-weight-bold has-text-dark" href="index.html">CompuNet</a>
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item" id="men">
+                        <a class="nav-menu-link link-submenu active" href="#">Productos <i
+                                class="zmdi zmdi-chevron-down"></i></a>
+                        <div class="container-sub-menu">
+                            <ul class="sub-menu-ul">
+                                <li class="nav-menu-item ">
+                                    <!-- <a class="nav-menu-link" href="#">
+                                        <strong>Casual</strong>
+                                        <i class="zmdi zmdi-chevron-down "></i>
+                                    </a> -->
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=mouse">Mouse</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=parlante">Parlante</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=monitor">Monitor</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cpu">CPU</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=cables">Cables</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=microfono">Microfono</a>
+                                        </li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=teclado">Teclado</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="lookbook.html?x=gadget">Gadgets</a></li>
+                                    </ul>
+                                </li>
+                            </ul>  
+                            
+                            <!-- <div class="ads is-hidden-touch">
+                                <h1 class="ads-h1">Ofertas de Verano</h1>                                
+                            </div> -->
+                        </div>
+                    </li>
+                   
+                    <li class="nav-menu-item"><a href="brand.html" class="nav-menu-link">La Marca</a></li>
+                  
+                    <li class="nav-menu-item"><a href="lookbook.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+   
+    <div class="container-full">
+        <div class="is-two-fifths-desktop paddings">
+            <h1 class="has-text-black"> Terminar Compra  <i class="zmdi zmdi-shopping-cart"></i> </h1> 
+
+           <div class="container-full">
+                <div class="columns is-multiline">
+                    <div class="column has-background-white">
+                        <form>
+                        <div class="field-body">
+                            <div class="field ">
+                                <label class="label">Nombres</label>
+                                <div class="control">
+                                  <input class="input" type="text" placeholder="Escribe aqui" required>
+                                </div>
+                              </div>                              
+                              <div class="field">
+                                <label class="label">Apellidos</label>
+                                <div class="control has-icons-left has-icons-right">
+                                  <input class="input" type="text" placeholder="Escribe aqui" value="" required>
+                                  <!-- <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                  </span>
+                                  <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                  </span> -->
+                                </div>
+                                 <!-- <p class="help is-success">This username is available</p> -->
+                              </div>
+                        </div>                        
+                          
+                        <div class="field">
+                            <label class="label">Nro Telefono</label>
+                            <div class="control">
+                              <input class="input" type="number" placeholder="..." required>
+                            </div>
+                          </div>
+                        
+                          <div class="field">
+                            <label class="label">Email</label>
+                            <div class="">
+                                <div class="field has-addons">
+                                    <p class="control is-expanded">
+                                      <input class="input" type="text" placeholder="Your email">
+                                    </p>
+                                    <p class="control">
+                                      <a class="button is-static">
+                                        @gmail.com
+                                      </a>
+                                    </p>
+                                  </div>
+                              
+                            </div>
+                           
+                          </div>
+                          
+                          <div class="field">
+                            <label class="label">Departamento</label>
+                            <div class="control">
+                              <div class="select is-fullwidth ">
+                                <select required>
+                                  <option >Cochabamba</option>
+                                  <option>Santa Cruz</option>
+                                  <option>Pando</option>
+                                  <option>La Paz</option>
+                                  <option>Tarija</option>
+                                  <option>Beni</option>
+                                  <option>Sucre</option>
+                                  <option>Potosi</option>
+                                  <option>Oruro</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="label">Provincia / Localidad</label>
+                            <div class="control">
+                              <textarea class="input" placeholder="Ej : San Isidro " required></textarea>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="label">Av. o Calle</label>
+                            <div class="control">
+                              <textarea class="input" placeholder="Calle 4 Enero"></textarea>
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="label">Descripcion Espefica del lugar</label>
+                            <div class="control">
+                              <textarea class="textarea" placeholder="Descripcion para el pedido" required></textarea>
+                            </div>
+                          </div> 
+
+                          <br>
+                          <h2 class="has-text-black">Confirmar Compra ?</h2>             
+                          <div class="field is-grouped">
+                            
+                            <div class="control">
+                              <input  type="submit" class="button is-link is-outlined"  value="Confirmar">
+                            </div>
+                            <div class="control">
+                              <button class="button is-link is-danger is-outlined">Cancelar</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link is-success is-outlined">
+                                    <i class="zmdi zmdi-whatsapp paddingRight"></i>
+                                    Enviar a WhatsApp</button>
+                              </div>
+                          </div>
+                        </form>
+                    </div>  
+
+                    <div class="column">                                                                            
+                         <div class="container-full has-background-white-ter paddingNormal">
+                            <h1 class="has-text-centered">Modo de Pedido</h1>
+                            <p class="has-text-black has-text-weight-bold">Productos</p>
+                            <div class="field-body">
+                                <div class="field ">
+                                    <label class="label">Nombre</label>                                    
+                                  </div>                              
+                                  <div class="field">
+                                    <label class="label --text-right">Precio</label>                                    
+                                </div>
+                            </div> 
+                            <div id="products" class="">      
+                               <!--     
+                                ACA SE IMPRIMIRAN TODOS LOS PRODCUTOS DEL CARRITO
+                               -->
+                            </div>                         
+
+                            <div class="columns is-mobile">
+                                <div class="column  is-8  is-6-mobile">
+                                    <p class="has-text-black "><strong >Subtotal
+                                    </strong> </p>
+                                </div>
+                                <div class="column is-4 is-6-mobile is-mobile is-6-touch">
+                                    <p class="has-text-black --text-right"> <strong id="total"></strong></p>
+                                </div>                                
+                            </div>     
+                            <div class="field is-mobile">
+                                <h2 class="text "><strong>Envios y Forma de Pago </strong></h2>        <br>
+                                <p>
+                                    Si se encuentra en Santa Cruz se puede realizar los envios dependiendo con
+                                    los gastos extras de acuerdo a lo que el propietario de la tienda disponga.
+                                    Ademas si se encuentra en Santa Cruz puede hacer el pago en la tienda
+                                </p>
+                                <div class="field">
+                                    <label class="radio">
+                                      <input type="radio" name="tienda">
+                                      Recojer en la tienda
+                                    </label>
+                                    <label class="radio">
+                                      <input type="radio" name="envio">
+                                      Envios en Santa Cruz
+                                    </label>
+                                </div>
+                                <div class="field">
+                                   <p><strong>Transferencia (Para envios )</strong></p>
+                                   <figure class="image is-square">
+                                    <img src="img/qr.png" >
+                                  </figure>
+                                  <p>Nota: Enviar comprobante al +591 756453</p>
+                                </div>
+
+                            </div>          
+                        </div>                           
+                    </div>
+                </div>
+                <div>
+                </div>
+           </div>
+        </div>
+    </div>    
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Información</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">La marca</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Local stores</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Servicios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Mapa del sitio</a></li>
+                    </ul>
+                </div>
+
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Porqué comprar</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios y retornos</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Envios seguros</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Testimonios </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Award waining</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Etival trading</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Tu cuenta</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Iniciar sesión</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Registro</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver carrito </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver catálogo</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Track an order</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Catalogo</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para hombres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+
+                    <ul class="footer-ul">
+                        <li class="footer-item">
+                            <h3 class="has-text-weight-bold">Datos de contacto</h3>
+                        </li>
+                        <li class="footer-item"><a class="footer-link" href="#">Head</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Catálogo para mujeres</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Ver tu Catalogo </a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Privacidad y cookies</a></li>
+                        <li class="footer-item"><a class="footer-link" href="#">Borrar tu catalogo</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="column is-full">
+                    <div class="footer-socials">
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        <a class="footer-solcials-link" href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="footer-bar-top">
+            <div class="container">
+                <a class="footer-bar-top-links" href="#">2021 Avenue Fashion</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var carrito = new Carrito();
+        var items=document.getElementById("products");
+        var subtotal=document.getElementById("total");
+        carrito.constructor();
+
+        window.onload=function(){
+            cargarproducts();
+        }
+
+        function cargarproducts(){
+            var carro=carrito.getCarrito;
+            var texto='';
+            var totall=0;
+            for(var item of carro){
+                items.innerHTML+="<div class='columns is-mobile'>"+
+                                    "<div class='column  is-9 is-four-fifths is-9-mobile'>"+
+                                       "<p>"+item.nombre+"</p>"+
+                                    "</div>"+
+                                    "<div class='column is-3 is-3-mobile is-mobile is-3-touch'>"+
+                                        "<p class='--text-right'>"+item.precio +"bs.</p>"+
+                                    "</div>"+                                
+                                "</div> ";
+                totall+=(item.precio*item.cantidad);
+            }
+
+            subtotal.innerText=totall+' bs.'
+            
+        }
+                 
+    </script>
+</body>
+</html>

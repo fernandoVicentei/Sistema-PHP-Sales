@@ -1,0 +1,127 @@
+[
+    {
+        "categoria":"mouse",
+        "id":1,
+        "nombre":"Mouse Gaming Mounstruo",
+        "img":"img/mouse1.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":350
+    },
+    {
+        "categoria":"mouse",
+        "id":2,
+        "nombre":"Mouse LGB Gaming RGB",
+        "img":"img/mouse2.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":320 
+    },
+    {
+        "categoria":"parlante",
+        "id":3,
+        "nombre":"Parlante GAMING FULL",
+        "img":"img/parlante1.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":500
+    },
+    {
+        "categoria":"parlante",
+        "id":4,
+        "nombre":"Parlante Full RGB ",
+        "img":"img/parlante2.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":510
+    },
+    {
+        "categoria":"monitor",
+        "id":5,
+        "nombre":"Monitor 3X Full",
+        "img":"img/monitor1.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":1200
+        
+    },
+    {
+        "categoria":"monitor",
+        "id":6,
+        "nombre":"Monitor 4K",
+        "img":"img/monitor2.png",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":1210
+        
+    },
+    {
+        "categoria":"cpu",
+        "id":7,
+        "nombre":"CPU Gaming Full",
+        "img":"img/cpu1.png",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":2000
+        
+    },
+    {
+        "categoria":"cpu",
+        "id":8,
+        "nombre":"CPU Gamming XPress",
+        "img":"img/cpu2.jpeg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":2100
+    },
+    {
+        "categoria":"cables",
+        "id":9,
+        "nombre":"Cables USB MxH",
+        "img":"img/cusb1.jpg",
+        "descripcion":" Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":50        
+    },
+    {
+        "categoria":"microfono",
+        "id":10,
+        "nombre":"Microfono Streamer",
+        "img":"img/microfono1.png",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":1200
+    },
+    {
+        "categoria":"microfono",
+        "id":11,
+        "nombre":"Microfono Full Audience",
+        "img":"img/microfono2.jpg",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":1100
+    }, 
+    {
+        "categoria":"teclado",
+        "id":12,
+        "nombre":"Teclado Gamming",
+        "img":"img/teclado1.jpg",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":300
+    }
+    , 
+    {
+        "categoria":"teclado",
+        "id":13,
+        "nombre":"Teclado Gamming X2",
+        "img":"img/teclado2.jpg",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":310
+    }, 
+    {
+        "categoria":"gadget",
+        "id":14,
+        "nombre":"PC Play Gaming",
+        "img":"img/gadget1.jpg",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":1000
+        
+    },
+     {
+        "categoria":"gadget",
+        "id":15,
+        "nombre":"UseFull",
+        "img":"img/gadget2.jpg",
+        "descripcion":"Lorem ipsum dolor, sit amet consectetur adipisicing elit.Inventore quidem aspernatur eaque vitae mollitia ipsum ex esse,",
+        "precio":300        
+    }  
+]
